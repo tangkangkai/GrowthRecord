@@ -29,3 +29,15 @@
     * Attainable
     * Relevant
     * Time-bound
+
+**KPI**
+
+* 定义：Key Performance Indicator
+* 特点：提倡量化考核指标
+* OKR与KPI的区别
+![](https://static001.geekbang.org/resource/image/77/f2/774b769b2ca86f27206ae55a2e2bdaf2.png)
+* OKR目标包括绩效（和KPR相似部分），但不局限于绩效，_也不将绩效和考核、奖金、薪资挂钩_
+* OKR与KPI结合
+    * 讨论目标
+    * 制定KPI
+    * OKR为主，KPI为辅
