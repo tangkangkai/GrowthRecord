@@ -47,3 +47,57 @@ system keeps processing transactions, event when impulses, stresses, or componen
 * countering the problem
     * [code] weak reference
     * test aggressively
+
+#### Blocked Threads
+
+* normally with integration point, around resource pools
+* library
+    * may need warpper to do timeouts
+* countering the problem
+    * scrutinize resource pools
+    * use proven primitives
+    * timeouts
+    * be aware of the library
+    * command query responsibility separation
+    * external loggings
+    * counters
+
+#### Self-Denail Attacks
+
+* system, including extended system and human, conspire agianst itself
+* countering the problem
+    * keep the lines of communication open
+    * protect shared resources 
+
+#### Scaling Effects
+#### Unbalanced Capacities
+
+* mismatched ratios between different layers
+    * dealing with rate limit APIs
+
+#### Dogpile
+
+* servers impose load at once
+* steady-state load != startup or periodic load
+* coutering the problem
+    * avoid pulsing
+
+#### Force Multiplier
+
+* automation vs manual belief of the state
+* control plane - logging, monitoring, schedulers, scalers, load balancers, configuration management
+    * sense the current state, and compare the desired state
+* coutering the problem
+    * build limiters and safeguard
+
+#### Slow Response
+
+* ties up resources in the calling/called system
+* memory leaks, resource connection
+* coutering the problem
+    * fail fast
+
+#### Unbounded Result Sets
+
+* coutering the problem
+    * caller indicate limit
