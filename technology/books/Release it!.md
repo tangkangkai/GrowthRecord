@@ -101,3 +101,30 @@ system keeps processing transactions, event when impulses, stresses, or componen
 
 * coutering the problem
     * caller indicate limit
+
+
+### Stability Patterns
+
+#### Timeouts
+
+* fault isolation
+* organize long-running opeartions into shared component and reuse       
+* retry
+    * less retry if upper stream clients wait
+    * slow retry if queuing the work is ok
+
+#### Circuit Breaker
+
+* allow one subsystem to fail without destroying the whole system
+* detect & fail fast
+* state
+    * **closed** - usual 
+    * **open** - fail immediately 
+    * **half open** - trial
+* detect failure
+    * fault density, instead of total count
+* handle failure
+    * specific exception
+    * fall back result(cache/default)
+    * call another service
+* scope of single thread

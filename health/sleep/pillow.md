@@ -1,0 +1,1 @@
+* Side sleepers will need a thicker, firmer pillow to help support the neck.
